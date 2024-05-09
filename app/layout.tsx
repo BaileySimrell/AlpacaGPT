@@ -5,10 +5,10 @@ import { assistantId } from "./assistant-config";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "QuantGPT",
-  description: "A helpful assistant designed to help you navigate through the VectorBT (PRO) documentation.",
+  title: "AlpacaGPT",
+  description: "A helpful assistant designed to help you navigate through the Alpaca API documentation.",
   icons: {
-    icon: "/vectorbtpro.svg",
+    icon: "/alpaca.svg",
   },
 };
 
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {assistantId ? children : <Warnings />}
-        <img className="logo" src="/vectorbtpro.svg" alt="VectorBT (PRO) Logo" />
+        <img className="logo" src="/alpaca.svg" alt="Alpaca Markets Logo" />
       </body>
     </html>
   );
